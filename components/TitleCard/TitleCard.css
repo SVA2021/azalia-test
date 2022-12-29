@@ -1,0 +1,169 @@
+.titleCard {
+    position: relative;
+    width: 332px;
+    margin-top: 25px;
+}
+
+.titleCard__title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #2E2E33;
+}
+
+.titleCard__arrow {
+    margin-top: 20px;
+}
+
+.banner25 {
+    margin-top: 34px;
+    margin-bottom: 10px;
+    height: 140px;
+    background: #636B7F;
+    display: flex;
+
+}
+
+.banner25__img {
+    position: relative;
+    width: 164px;
+    height: 140px;
+}
+
+.banner25__text {
+    padding-top: 22px;
+    padding-left: 25px;
+    color: #fff;
+}
+
+.banner25__sale {
+    position: relative;
+    height: 24px;
+    width: 60px;
+    color: #2E2E33;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.banner25__sale::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 60px;
+    background: #FFDC38;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: skewX(-30deg);
+}
+
+.banner__sale {
+    position: relative;
+    z-index: 10;
+    padding-left: 10px;
+}
+
+.banner25__category {
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.banner25__btn{
+    position: relative;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.banner25__btn::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -50%;
+    left: 45%;
+    height: 20px;
+    width: 20px;
+    opacity: 0.1;
+    border: 2px solid #FFFFFF;
+    border-radius: 90px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.banner10 {
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+    background: #F5F5F7;
+    border: 1px solid #F5F5F7;
+}
+
+.banner10__img {
+    position: relative;
+    width: 185px;
+    height: 140px;
+}
+
+.banner10__text {
+    position: relative;
+    padding-top: 22px;
+    padding-left: 18px;
+}
+
+.banner10__sale {
+    display: inline-block;
+    position: relative;
+    z-index: 20;
+    margin-left: 8px;
+    height: 24px;
+    width: 50px;
+    color: #2E2E33;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.banner10__sale::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 50px;
+    background: #FFDC38;
+    transform: skewX(-30deg);
+}
+
+.banner10__category {
+    margin-top: 4px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.banner10__btn{
+    position: relative;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    opacity: 0.5;
+}
+
+.banner10__btn::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -50%;
+    left: 45%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 90px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}

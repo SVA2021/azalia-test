@@ -1,0 +1,53 @@
+.basket__body {
+    width: 175px;
+    height: 40px;
+    border-radius: 90px;
+    background: #F5F5F7;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.basket__active {
+    background: #00B177;
+}
+
+.basket__btn {
+    padding: 10px 20px;
+    border-radius: 90px;
+    background: #4056A1;
+    border: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.counter {
+    margin-right: 15px;
+    color: #2E2E33;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.counter__btn {
+    opacity: 0.3;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.counter__digit {
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.basket__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
