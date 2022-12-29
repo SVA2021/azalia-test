@@ -49,7 +49,7 @@ export const Product: FC<ProductProps> = ({product, addToBasket, addToFavorites,
             </div>
             {(rating?.count && rating?.count >= 300) &&
                 <div className={s.hit}>
-                    <span className="hit__text">Хит</span>
+                    <span className={s.hit__text}>Хит</span>
                     <Image
                         className={s.hit__img}
                         src={'/hit.svg'}
