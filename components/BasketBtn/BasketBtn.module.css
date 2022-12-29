@@ -10,6 +10,14 @@
 }
 
 .basket__active {
+    width: 175px;
+    height: 40px;
+    border-radius: 90px;
+    background: #F5F5F7;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    font-weight: 500;
     background: #00B177;
 }
 

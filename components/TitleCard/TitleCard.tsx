@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
-import './TitleCard.css';
+// import './TitleCard.css';
+import s from './TitleCard.module.css';
 
 export const TitleCard = () => {
     return (
-        <div className="titleCard">
-            <h3 className="titleCard__title">Всё для комфортной работы</h3>
+        <div className={s.titleCard}>
+            <h3 className={s.titleCard__title}>Всё для комфортной работы</h3>
             <Image
-                className="titleCard__arrow"
+                className={s.titleCard__arrow}
                 src={'/arrow.svg'}
                 alt={'arrow'}
                 width={40}
@@ -15,8 +16,8 @@ export const TitleCard = () => {
                 priority
                 onClick={() => console.log('arrow clicked')}
             />
-            <div className="titleCard__banner banner25">
-                <div className="banner25__img">
+            <div className={s.banner25}>
+                <div className={s.banner25__img}>
                     <Image
                         src={'/image_1.png'}
                         alt={'computers'}
@@ -25,37 +26,37 @@ export const TitleCard = () => {
                         priority
                     />
                 </div>
-                <div className="banner25__text">
-                    <p className="banner25__sale">
-                        <span className="banner__sale" >- 25%</span>
+                <div className={s.banner25__text}>
+                    <p className={s.banner25__sale}>
+                        <span className={s.banner__sale} >- 25%</span>
                     </p>
-                    <p className="banner25__category">
+                    <p className={s.banner25__category}>
                         на товары
                         <br />
                         для кабинета
                     </p>
-                    <div className="banner25__btn">
+                    <div className={s.banner25__btn}>
                         Выбрать
                     </div>
                 </div>
             </div>
-            <div className="titleCard__banner banner10">
-                <div className="banner10__text">
-                    <p className="banner10__category">
+            <div className={s.banner10}>
+                <div className={s.banner10__text}>
+                    <p className={s.banner10__category}>
                         Скидка
-                        <span className="banner10__sale">
-                            <span className="banner__sale" >10%</span>
+                        <span className={s.banner10__sale}>
+                            <span className={s.banner__sale} >10%</span>
                         </span>
                         <br />
                         на периферию
                         <br />
                         для компьютера
                     </p>
-                    <div className="banner10__btn">
+                    <div className={s.banner10__btn}>
                         Выбрать
                     </div>
                 </div>
-                <div className="banner10__img">
+                <div className={s.banner10__img}>
                     <Image
                         src={'/image_2.png'}
                         alt={'computers'}

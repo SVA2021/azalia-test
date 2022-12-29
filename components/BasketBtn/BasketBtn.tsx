@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react';
-import './BasketBtn.css';
+import s from './BasketBtn.module.css';
 
 interface BasketBtnProps {
     isInBasket: boolean
@@ -18,19 +18,17 @@ export const BasketBtn: FC<BasketBtnProps> = ({isInBasket, addToBasket}) => {
         }
     }
 
-    const basketType = isInBasket ? 'basket__body basket__active' : 'basket__body';
-
     return (
-        <div className={basketType} >
+        <div className={isInBasket ? s.basket__active : s.basket__body} >
             {
                 isInBasket
                     ? <span>В корзине</span>
-                    : <div className="basket__buttons">
-                        <button className="basket__btn" onClick={() => addToBasket()} >В корзину</button>
-                        <div className="counter">
-                            <button className="counter__btn" onClick={() => handleCount(count, 'dec')} >-</button>
-                            <span className="counter__digit">{count}</span>
-                            <button className="counter__btn" onClick={() => handleCount(count, 'inc')} >+</button>
+                    : <div className={s.basket__buttons}>
+                        <button className={s.basket__btn} onClick={() => addToBasket()} >В корзину</button>
+                        <div className={s.counter}>
+                            <button className={s.counter__btn} onClick={() => handleCount(count, 'dec')} >-</button>
+                            <span className={s.counter__digit}>{count}</span>
+                            <button className={s.counter__btn} onClick={() => handleCount(count, 'inc')} >+</button>
                         </div>
                     </div>
             }

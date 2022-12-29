@@ -1,9 +1,10 @@
 import React, {FC} from 'react';
 import Image from 'next/image';
-import './Product.css';
+// import './Product.css';
 import {ProductProps} from './Product.types';
 import {Ratings} from '../Ratings/Ratings';
 import {BasketBtn} from '../BasketBtn/BasketBtn';
+import s from './Product.module.css';
 
 export const Product: FC<ProductProps> = ({product, addToBasket, addToFavorites, isFavorite, isInBasket}) => {
 
@@ -18,8 +19,8 @@ export const Product: FC<ProductProps> = ({product, addToBasket, addToFavorites,
     );
 
     return (
-        <div className="card" >
-            <div className="img">
+        <div className={s.card} >
+            <div className={s.img}>
                 <Image
                     src={image}
                     alt={title ?? 'product image'}
@@ -28,16 +29,16 @@ export const Product: FC<ProductProps> = ({product, addToBasket, addToFavorites,
                     priority
                 />
             </div>
-            <div className="details" >
-                <p className="category">{category}</p>
+            <div className={s.details} >
+                <p className={s.category}>{category}</p>
                 <Ratings rating={rating} />
             </div>
-            <p className="title">{title}</p>
-            <p className="price">{price} <span className="qty">/шт.</span> </p>
-            <div className="card__actions">
+            <p className={s.title}>{title}</p>
+            <p className={s.price}>{price} <span className="qty">/шт.</span> </p>
+            <div className={s.card__actions}>
                 <BasketBtn isInBasket={isInBasket} addToBasket={addToBasket} />
                 <Image
-                    className="card__favorite"
+                    className={s.card__favorite}
                     src={isFavorite ? '/redHeart.svg' : '/heart.svg'}
                     alt={'add to favorites'}
                     width={40}
@@ -47,10 +48,10 @@ export const Product: FC<ProductProps> = ({product, addToBasket, addToFavorites,
                 />
             </div>
             {(rating?.count && rating?.count >= 300) &&
-                <div className="hit">
+                <div className={s.hit}>
                     <span className="hit__text">Хит</span>
                     <Image
-                        className="hit__img"
+                        className={s.hit__img}
                         src={'/hit.svg'}
                         alt={'hit'}
                         width={64}
